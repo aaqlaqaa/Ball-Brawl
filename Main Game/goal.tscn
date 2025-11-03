@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://b8ruqxogw5nxc"]
+
+[ext_resource type="Script" uid="uid://b04ojpqedk16o" path="res://goal.gd" id="1_ttdqm"]
+[ext_resource type="Texture2D" uid="uid://cgs5x634mh20j" path="res://Pixel Adventure 1/Free/Items/Boxes/Box1/Idle.png" id="2_6mdnd"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5jf5f"]
+size = Vector2(70, 56)
+
+[node name="Goal" type="Area2D"]
+script = ExtResource("1_ttdqm")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(2.6607141, 2.875)
+texture = ExtResource("2_6mdnd")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+light_mask = 3
+visibility_layer = 2
+position = Vector2(0, -1)
+shape = SubResource("RectangleShape2D_5jf5f")
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
