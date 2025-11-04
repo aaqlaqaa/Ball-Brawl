@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://fa05dg4wcl86"]
 
 [ext_resource type="Script" uid="uid://cjmv76tbsycuu" path="res://Main Game/ball.gd" id="1_0cw2u"]
-[ext_resource type="Texture2D" uid="uid://chh56wastuim4" path="res://Pixel Adventure 1/Free/Other/Dust Particle.png" id="2_2f6ms"]
+[ext_resource type="Texture2D" uid="uid://chh56wastuim4" path="res://Main Game/Dust Particle.png" id="2_2f6ms"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_owbt7"]
 radius = 28.0

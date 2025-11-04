@@ -1,7 +1,7 @@
 [gd_scene load_steps=10 format=4 uid="uid://df70duftqgyck"]
 
 [ext_resource type="PackedScene" uid="uid://doq178gctw6nr" path="res://Main Game/Texture.tscn" id="1_lp10x"]
-[ext_resource type="Texture2D" uid="uid://c4jig0lya1eop" path="res://Pixel Adventure 1/Free/Terrain/Terrain (16x16).png" id="2_n8baw"]
+[ext_resource type="Texture2D" uid="uid://c4jig0lya1eop" path="res://Main Game/Terrain (16x16).png" id="2_n8baw"]
 [ext_resource type="PackedScene" uid="uid://diaqgqfmbooxs" path="res://Main Game/player.tscn" id="3_x6ho8"]
 [ext_resource type="PackedScene" uid="uid://u2oc730t151d" path="res://Main Game/character_body_2d.tscn" id="4_lp10x"]
 [ext_resource type="PackedScene" uid="uid://djktae6s5q6td" path="res://Main Game/platform_1_way.tscn" id="5_n8baw"]
@@ -204,11 +204,10 @@ tile_map_data = PackedByteArray("AAAAAAEAAAAHAAEAAAAAABAAAAAHAAEAAAAAABEAAAAHAAE
 tile_set = SubResource("TileSet_rbewq")
 
 [node name="Goal" parent="." instance=ExtResource("7_vaqtm")]
-position = Vector2(1151, 107)
-player_goal_Id = 2
+position = Vector2(1126, 103)
 
 [node name="Goal2" parent="." instance=ExtResource("7_vaqtm")]
-position = Vector2(7, 101)
+position = Vector2(41, 101)
 
 [node name="Player" parent="." groups=["Player"] instance=ExtResource("3_x6ho8")]
 position = Vector2(1079, 514)

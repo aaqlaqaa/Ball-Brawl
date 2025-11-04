@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://djktae6s5q6td"]
 
-[ext_resource type="Texture2D" uid="uid://c4jig0lya1eop" path="res://Pixel Adventure 1/Free/Terrain/Terrain (16x16).png" id="1_j7cdj"]
+[ext_resource type="Texture2D" uid="uid://c4jig0lya1eop" path="res://Main Game/Terrain (16x16).png" id="1_j7cdj"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_7gc3q"]
 size = Vector2(57, 4)

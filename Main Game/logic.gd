@@ -1,0 +1,55 @@
+extends CharacterBody2D
+
+# Movement Constants
+const SPEED = 150.0
+const JUMP_VELOCITY = -300.0
+var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
+
+# For different input controls per player
+@export var input_prefix = "player1_"  # "player1_" or "player2_"
+
+
+
+func _physics_process(delta):
+	# Apply gravity
+	if not is_on_floor():
+		velocity.y += gravity * delta
+	
+	# Handle input based on player
+	var input_direction = Input.get_axis(
+		input_prefix + "left",
+		input_prefix + "right"
+	)
+	velocity.x = input_direction * SPEED
+	
+	# Handle jumping
+	if Input.is_action_just_pressed(input_prefix + "jump") and is_on_floor():
+		velocity.y = JUMP_VELOCITY
+	
+	# Move the player
+	move_and_slide()
+
+var x_velocity = 0.0
+var y_velocity = 0.0
+
+# Holding state
+var held_by = null
+const HOLD_OFFSET = Vector2(0, -30)  # Above player's head
+const LERP_WEIGHT = 15.0
+
+# Throwing
+
+
+func pickup(player):
+	held_by = player
+	velocity = Vector2.ZERO
+	x_velocity = 0.0
+	y_velocity = 0.0
+
+func drop():
+	held_by = null
+
+func throw(direction: float):
+	held_by = null
+
+	y_velocity = -150.0  # Slight upward arc

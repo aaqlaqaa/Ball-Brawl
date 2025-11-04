@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://doq178gctw6nr"]
 
-[ext_resource type="Texture2D" uid="uid://3q4fkmx3u4ea" path="res://Pixel Adventure 1/Free/Background/Green.png" id="1_eic76"]
+[ext_resource type="Texture2D" uid="uid://3q4fkmx3u4ea" path="res://Main Game/Green.png" id="1_eic76"]
 
 [node name="TextureRect" type="TextureRect"]
 texture_filter = 1
