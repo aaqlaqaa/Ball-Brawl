@@ -6,13 +6,13 @@
 [sub_resource type="CircleShape2D" id="CircleShape2D_pk8fx"]
 radius = 27.073973
 
-[node name="Player2" type="CharacterBody2D"]
+[node name="Player2" type="CharacterBody2D" groups=["Player"]]
 position = Vector2(3, -3)
 script = ExtResource("1_hbqhh")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(-3.0000026, -0.5000007)
-scale = Vector2(1.4374999, 1.6562498)
+position = Vector2(-1.9999995, 0.4999984)
+scale = Vector2(1.625, 1.5937498)
 texture = ExtResource("2_hbqhh")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]

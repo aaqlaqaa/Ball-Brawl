@@ -6,14 +6,14 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_onrkg"]
 size = Vector2(66, 55)
 
-[node name="Player" type="CharacterBody2D"]
+[node name="Player" type="CharacterBody2D" groups=["Player"]]
 light_mask = 3
 visibility_layer = 3
 script = ExtResource("1_sb7ru")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(-2.4999974, 3.500001)
-scale = Vector2(2.59375, 1.84375)
+position = Vector2(1.0000002, 3.500001)
+scale = Vector2(2.375, 1.84375)
 texture = ExtResource("2_sb7ru")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]

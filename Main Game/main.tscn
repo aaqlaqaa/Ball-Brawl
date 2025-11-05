@@ -208,12 +208,13 @@ position = Vector2(1126, 103)
 
 [node name="Goal2" parent="." instance=ExtResource("7_vaqtm")]
 position = Vector2(41, 101)
+player_goal_Id = 2
 
-[node name="Player" parent="." groups=["Player"] instance=ExtResource("3_x6ho8")]
+[node name="Player" parent="." instance=ExtResource("3_x6ho8")]
 position = Vector2(1079, 514)
 disable_mode = 2
 
-[node name="Player2" parent="." groups=["Player"] instance=ExtResource("4_lp10x")]
+[node name="Player2" parent="." instance=ExtResource("4_lp10x")]
 position = Vector2(83, 467)
 disable_mode = 2
 
